@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --hero-background: #3DBEFF;
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-b: 'Barlow', sans-serif;
+    --font-family-f: 'Fraunces', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+*:focus {
+    outline:none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.hero-wrapper {
+    background-image: url(./images/photos/image-header.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: var(--font-family-b);
+    color: #fff;
+    font-weight: normal;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--Dark-blue);
+}
+
+.nav-links button {
+    padding: 0.5rem 0.75rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: none;
+    background-color: #fff;
+    margin: 0rem 2rem;
+    font-family: var(--font-family-f);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--Very-dark-desaturated-blue);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links button: hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.nav-links button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.hero {
+    min-height: 75vh;
+    text-align: center;
+    padding: 3rem 0rem;
+    position: relative;
+}
+
+.hero::after {
+    content: url(images/icons/icon-arrow-down.svg);
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-38%, -50%);
+}
+
+.hero h1 {
+    font-family: var(--font-family-f);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #fff;
+    font-weight: 900;
+}
