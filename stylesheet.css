@@ -61,7 +61,6 @@ header {
     color: #fff;
     font-weight: normal;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -82,12 +81,6 @@ header {
     color: var(--Very-dark-desaturated-blue);
     cursor: pointer;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-links button: hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #fff;
 }
 
 .nav-links button:hover {
@@ -118,6 +111,12 @@ header {
     word-spacing: 5px;
     color: #fff;
     font-weight: 900;
+}
+
+.content-one, .content-two {
+    width: 100%;
+    display: flex;
+    min-height: 75vh;
 }
 
 .content-two {
@@ -191,7 +190,6 @@ header {
     z-index: -1;
     border-radius: 10px;
     opacity: 0.4;
-    transition: all 0.2s ease-in-out;
 }
 
 .content-1-text button:hover::after {
@@ -209,7 +207,6 @@ header {
     z-index: -1;
     border-radius: 10px;
     opacity: 0.4;
-    transition: all 0.2s ease-in-out;
 }
 
 .content-2-text button:hover::after {
@@ -217,13 +214,6 @@ header {
 }
 
 .graphic-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    min-height: 75vh;
-}
-
-.graphic-one {
     width: 100%;
     display: flex;
     align-items: center;
@@ -344,6 +334,7 @@ header {
 .milk-image {
     background: url(./images/photos/image-gallery-milkbottles.jpg);
     background-position: center;
+    background-size: cover;
     width: 25%;
     min-height: 65vh;
 }
@@ -358,6 +349,14 @@ header {
 
 .cone-image {
     background: url(./images/photos/image-gallery-cone.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    min-height: 65vh;
+}
+
+.cube-image {
+    background: url(./images/photos/image-gallery-sugarcubes.jpg);
     background-position: center;
     background-size: cover;
     width: 25%;
@@ -398,7 +397,6 @@ footer img {
     color: var(--Dark-desaturated-cyan);
     font-family: var(--font-family-b);
     font-size: 18px;
-    transition: all 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
@@ -410,7 +408,6 @@ footer img {
     transform: scale(1.5);
     color: var(--Dark-desaturated-cyan);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
 .social-links i:hover {
@@ -468,7 +465,6 @@ footer img {
         align-items: center;
         justify-content: center;
         transform: scale(0);
-        transition: transform 0.3s linear;
         transform-origin: top;
         border-radius: 0px 0px 10px 10px;
     }
@@ -483,7 +479,6 @@ footer img {
 
     .nav-links button {
         background: var(--Yellow);
-        transition: all 0.3s ease-in-out;
     }
 
     .nav-links button:hover {
@@ -505,6 +500,14 @@ footer img {
 
     .content-one-image {
         background: url(./images/photos/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 98vw;
+    }
+
+    .content-image-two {
+        background: url(./images/photos/image-stand-out.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -545,7 +548,4 @@ footer img {
     }
 }
 
-.checkbox:checked ~ .nav-links {
-    transform: scale(1);
-}
     
