@@ -426,3 +426,126 @@ footer img {
 .menu {
     display: none;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .content-one, .content-two {
+        flex-direction: column-reverse;
+    }
+
+    .content-1-text {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .content-one-image, .content-image-two {
+        width: 100vw;
+    }
+    
+    .graphic-content {
+        flex-direction: column;
+    }
+
+    .graphic-one, .graphic-two {
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+        padding: 2rem 2rem;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 85%;
+        width: 85vw;
+        text-align: center;
+        background: #fff;
+        z-index: 999;
+        padding: 3rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: transform 0.3s linear;
+        transform-origin: top;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        color: var(--Dark-desaturated-cyan);
+    }
+
+    .nav-links button {
+        background: var(--Yellow);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links button:hover {
+        background: #fff;
+        color: var(--Yellow);
+        border: solid 2px var(--Yellow);
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero-wrapper {
+        background: url(./images/photos/image-header.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-one-image {
+        background: url(./images/photos/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 98vw;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .testimonial {
+        margin: 0rem;
+    }
+
+    .milk-image {
+        width: 100%;
+        min-height: 35vh;
+    }
+
+    .orange-image {
+        width: 100%;
+        min-height: 35vh;
+    }
+
+    .cone-image {
+        width: 100%;
+        min-height: 35vh;
+    }
+
+    .cube-image {
+        width: 100%;
+        min-height: 35vh;
+    }
+
+    .display-images {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+}
+
+.checkbox:checked ~ .nav-links {
+    transform: scale(1);
+}
+    
